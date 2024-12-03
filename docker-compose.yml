@@ -1,4 +1,4 @@
-version: '3'
+
 services:
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:7.10.1
@@ -8,7 +8,7 @@ services:
     ports:
       - "9200:9200"
     volumes:
-      - /home/local/DIR/petar.demirov/test/my_flask_elastic_project/es_server:/usr/share/elasticsearch/data
+      - /home/krustachka/development/Flask/Jenkins-FlaskApp/es_server:/usr/share/elasticsearch/data
     healthcheck:
       test: ["CMD-SHELL", "curl -f http://localhost:9200 || exit 1"]
       interval: 10s

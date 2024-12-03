@@ -28,7 +28,6 @@ finally:
     print("Outer finally block executed")
 
 
-
 # Read operation -----------------------------
 @app.route("/")
 def get_transactions():
