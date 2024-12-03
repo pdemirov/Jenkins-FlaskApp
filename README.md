@@ -1,5 +1,6 @@
-<<<<<<< HEAD
 instructions to follow for most of the cases
+
+These are just for testing purposes
 
 get all data using curl:
 curl -X GET "http://localhost:9200/transactions/_search?pretty" -H 'Content-Type: application/json' -d'
@@ -40,7 +41,3 @@ curl -X POST "http://localhost:9200/_all/_delete_by_query" -H 'Content-Type: app
     "match_all": {}
   }
 }'
-=======
-# Jenkins-FlaskApp
-Testing jenkins pipelines on my flask app with docker, elastic, kibana, kubernetes
->>>>>>> a5d9f6b6cab195d501c3c2e9919844047629c0ce
